@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <style>
+            /*link states*/
+            a:link {
+                color: blue;
+            }
+            a:visited{
+                color: blueviolet;
+            }
+            a:hover{
+                color:brown ;
+                text-decoration: underline;
+            }
+            a:active{
+                color: orange;
+            }
+            /*interactive elements*/
+            button:hover{
+                background-color: lightpink;
+                outline: 2px solid blue;
+            }
+            /*structural pseudo-classes*/
+            p:first-child{
+                font-weight: bold;
+            }
+            p:last-child{
+                color: grey;
+            }
+            li:nth-child(odd) {
+                background-color: aquamarine;
+            }
+            li:nth-child(odd) {
+                background-color: white;
+            }
+            li:nth-child(3n){
+                color: red;
+            }
+            /*form pseudo-classes */
+            input:checked{
+                margin-left: 10px;
+            }
+            input:disabled{
+                background-color: blanchedalmond;
+            }
+            input:required{
+                border-color: brown;
+            }
+            input:invalid{
+                border-color: red;
+            }
+            input:valid{
+                border-color: green;
+            }
+            /*other pseduo-classes*/
+            p:not(.special){
+                color: lightskyblue;
+            }
+            :root{
+                --primary-color:yellow;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <a href="#"> hover and click me</a>
+        <br> <br>
+        <button> hover over me</button>
+        <br> <br>
+        <input type="text" placeholder="click to focus">
+        <br> <br>
+        <div>
+            <p> first paragraph (bold)</p>
+            <p> second paragraph</p>
+            <p> third paragraph</p>
+            <p> last paragraph(gray)</p>
+        </div>
+        <ul>
+            <li> item 1</li>
+            <li>item 2</li>
+            <li> item 3</li>
+            <li> item 4</li>
+            <li> item 5</li>
+            <li> item 6</li>
+        </ul>
+        <form >
+            <input type="text" disabled value="disabled"> <br>
+            <input type="checkbox" checked>checked  <br>
+            <input type="text" required> <br>
+            <input type="email" value="invalid-email">
+        </form>
+        <p class="special"> this is special (not affected)</p>
+        <p> this is  blue(not special)</p>
+        <p></p>
+    </body>
+</html>
